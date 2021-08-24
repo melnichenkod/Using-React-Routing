@@ -11,10 +11,10 @@ function App() {
         {/* <h1>{Date.now()}</h1> */}
         <Switch>
           <Route path='/films'>
-            <Lists endpoint='films'/>
+            <Lists endpoint='films' keyToShow='title'/>
           </Route>
           <Route path='/people'>
-            <Lists endpoint='people' />
+            <Lists endpoint='people' keyToShow='name'/>
           </Route>
           <Route exact path='/'>
             <h1>Home</h1>

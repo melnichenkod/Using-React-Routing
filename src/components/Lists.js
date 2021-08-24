@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-export default function Lists({endpoint}) {
+export default function Lists({endpoint, keyToShow}) {
   let [list, setList] = useState([])
   
   const api = `https://swapi.dev/api/${endpoint}/`;
@@ -16,7 +16,7 @@ export default function Lists({endpoint}) {
   },[endpoint]);
   return (
     <ul>
-      {list.map(({url, title}) => <li key={url}>{title}</li>)}
+      {list.map((item) => <li key={item.url}>{item[keyToShow]}</li>)}
     </ul>
   )
 }
