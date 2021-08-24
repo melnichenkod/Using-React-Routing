@@ -1,28 +1,20 @@
 import './App.css';
 import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom';
-import Films from './components/Films';
-import Planets from './components/Planets';
-import Species from './components/Species';
-import Starships from './components/Starships';
-import Vehicles from './components/Vehicles';
-
+import Header from './commons/Header';
+import Lists from './components/Lists';
 function App() {
   return (
     <Router>
       <div className="App">
-        <NavLink exact to='/'>Home</NavLink> ||
-        <NavLink to='/films'>films</NavLink> || 
-        <NavLink to='/planets'>planets</NavLink> ||
-        <NavLink to='/species'>species</NavLink> ||
-        <NavLink to='/starships'>starships</NavLink> ||
-        <NavLink to='/vehicles'>vehicles</NavLink>
+
+        <Header/>
         {/* <h1>{Date.now()}</h1> */}
         <Switch>
           <Route path='/films'>
-            <Films/>
+            <Lists endpoint='films'/>
           </Route>
-          <Route path='/planets'>
-            <Planets/>
+          <Route path='/people'>
+            <Lists endpoint='people' />
           </Route>
           <Route exact path='/'>
             <h1>Home</h1>
