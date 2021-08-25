@@ -11,8 +11,8 @@ export default function Lists({endpoint, keyToShow}) {
     setList(data.results)
   }
   useEffect(() => {
-    setList([])
-    getData()
+    setList([]);
+    getData();
   },[endpoint]);
   return (
     <ul>

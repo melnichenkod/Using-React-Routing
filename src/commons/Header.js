@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header>
       {endpoints.map(({endpoint, title}) => (
-        <NavLink to={`/${endpoint}`}>{title}</NavLink>
+        <NavLink key={endpoint} to={`/${endpoint}`}>{title}</NavLink>
       ))}
     </header>
   )

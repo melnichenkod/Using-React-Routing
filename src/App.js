@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './commons/Header';
 import Lists from './components/Lists';
 import endpoints from './utils/endpoints';
