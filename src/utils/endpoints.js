@@ -12,22 +12,22 @@ const endpoints = [
   {
     endpoint: 'planets',
     title: 'Planets',
-    keyToShow: 'title'
+    keyToShow: 'name'
   },
   {
     endpoint: 'species',
     title: 'Species',
-    keyToShow: 'title'
+    keyToShow: 'name'
   },
   {
     endpoint: 'starships',
     title: 'Starships',
-    keyToShow: 'title'
+    keyToShow: 'name'
   },
   {
     endpoint: 'vehicles',
     title: 'Vehicles',
-    keyToShow: 'title'
+    keyToShow: 'name'
   },
 ]
 export default endpoints;

@@ -5,14 +5,14 @@ export default function Lists({endpoint, keyToShow}) {
   let [list, setList] = useState([])
   
   const api = `https://swapi.dev/api/${endpoint}/`;
-  const getFilms = async () => {
+  const getData = async () => {
     const res = await fetch(api);
     const data = await res.json();
     setList(data.results)
   }
   useEffect(() => {
     setList([])
-    getFilms()
+    getData()
   },[endpoint]);
   return (
     <ul>
