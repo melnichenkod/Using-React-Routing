@@ -16,6 +16,18 @@ function App() {
           <Route path='/people'>
             <Lists endpoint='people' keyToShow='name'/>
           </Route>
+          <Route path='/planets'>
+            <Lists endpoint='planets' keyToShow='name'/>
+          </Route>
+          <Route path='/species'>
+            <Lists endpoint='species' keyToShow='name'/>
+          </Route>
+          <Route path='/starships'>
+            <Lists endpoint='starships' keyToShow='name'/>
+          </Route>
+          <Route path='/vehicles'>
+            <Lists endpoint='vehicles' keyToShow='name'/>
+          </Route>
           <Route exact path='/'>
             <h1>Home</h1>
           </Route>

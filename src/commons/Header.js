@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import endpoints from '../utils/endpoints';
 
 export default function Header() {
   return (
     <header>
-      <NavLink exact to='/'>Home</NavLink> ||
-        <NavLink to='/films'>films</NavLink> || 
-        <NavLink to='/people'>people</NavLink> ||
-        
+      {endpoints.map(({endpoint, title}) => (
+        <NavLink to={`/${endpoint}`}>{title}</NavLink>
+      ))}
     </header>
   )
 }
